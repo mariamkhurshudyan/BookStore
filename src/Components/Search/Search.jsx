@@ -1,4 +1,4 @@
-import Input from "../Reusable/Input/Input";
+import Input from "../UI/Input/Input";
 import React, { useState } from "react";
 
 const Search = () => {
