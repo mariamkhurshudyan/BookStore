@@ -1,0 +1,9 @@
+.sidebar{
+    width: 20%;
+    font-size: 1rem;
+}
+
+.sub-category{
+    border-left: 1px solid black;
+    padding-left: 25px;
+}

@@ -1,5 +1,6 @@
 import { SidebarData } from "./SidebarData";
 import { Link } from "react-router-dom";
+import "./Sidebar.css";
 
 const Sidebar = () => {
   return (
@@ -8,18 +9,18 @@ const Sidebar = () => {
         {SidebarData.map((value, key) => {
           return (
             <li key={key}>
-              <Link to={value.path}>
+              <Link to={value.path} style={{ color: "#191e38" }}>
                 {value.icon}
                 <span>{value.title}</span>
               </Link>
               {value.sub &&
                 value.sub.map((category, index) => {
                   return (
-                    <ol key={index}>
-                      <Link to={category.path}>
+                    <div key={index} className="sub-category">
+                      <Link to={category.path} style={{ color: "#191e38" }}>
                         <span>{category.title}</span>
                       </Link>
-                    </ol>
+                    </div>
                   );
                 })}
             </li>

@@ -1,5 +1,6 @@
 import { AiFillHome } from "react-icons/ai";
 import { ImPriceTag } from "react-icons/im";
+import { TiThLarge } from "react-icons/ti";
 
 export const SidebarData = [
   { title: "Home", icon: <AiFillHome />, path: "/home", sub: false },
@@ -16,5 +17,5 @@ export const SidebarData = [
       { title: "Music", path: "" },
     ],
   },
-  { title: "Wishlist", icon: "", path: "", sub: false },
+  { title: "Wishlist", icon: <TiThLarge />, path: "", sub: false },
 ];
