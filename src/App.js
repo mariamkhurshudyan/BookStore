@@ -9,14 +9,14 @@ import Layout from "./Layout/Layout";
 const App = () => {
   return (
     <>
-      <Layout>
-        <Router>
+      <Router>
+        <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="book/:id" element={<Book />} />
           </Routes>
-        </Router>
-      </Layout>
+        </Layout>
+      </Router>
     </>
   );
 };
