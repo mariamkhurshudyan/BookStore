@@ -8,7 +8,7 @@ const Sidebar = () => {
       <ul>
         {SidebarData.map((value, key) => {
           return (
-            <li key={key}>
+            <li key={key} className={styles.category}>
               <Link to={value.path} style={{ color: "#191e38" }}>
                 {value.icon}
                 <span>{value.title}</span>
