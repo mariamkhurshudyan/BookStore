@@ -1,22 +1,17 @@
 import React from "react";
-import { SideBar , Footer, Header} from "./index";
-import "./Layout.css";
-
+import { SideBar, Footer, Header } from "./index";
+import styles from "./Layout.module.css";
 
 const Layout = ({ children }) => {
   return (
-    <div className="container">
-      <div className="header">
-        <Header />
-      </div>
-       <div className="home-container">
+    <>
+      <Header />
+      <div className={styles.container}>
         <SideBar />
         <div>{children}</div>
-       </div>
-      <div>
-        <Footer />
       </div>
-    </div>
+      <Footer />
+    </>
   );
 };
 
