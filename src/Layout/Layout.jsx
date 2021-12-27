@@ -1,10 +1,11 @@
 import React from "react";
 import { SideBar , Footer, Header} from "./index";
+import "./Layout.css";
 
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <div className="container">
       <div className="header">
         Header
         <Header />
@@ -14,7 +15,7 @@ const Layout = ({ children }) => {
       <div>
         <Footer />
       </div>
-    </>
+    </div>
   );
 };
 
