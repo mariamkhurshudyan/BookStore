@@ -8,6 +8,7 @@ const Header = () => {
       <div className={styles.header}>
         <Logo />
         <Search />
+        <a href="/">Login</a>
       </div>
     </>
   );

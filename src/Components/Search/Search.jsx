@@ -2,15 +2,15 @@ import Input from "../UI/Input/Input";
 import React, { useState } from "react";
 
 const Search = () => {
-  const [name, setName] = useState("");
-  console.log(name);
+  const [term, setTerm] = useState("");
+  console.log(term);
   return (
     <div>
       <Input
-        value={name}
-        name="name"
-        onChange={(e) => setName(e.target.value)}
-        placeHolder="Name"
+        value={term}
+        name="Search"
+        onChange={(e) => setTerm(e.target.value)}
+        placeHolder="Search"
       />
     </div>
   );
