@@ -1,12 +1,16 @@
 import Search from "../../Components/Search/Search";
-//import Logo from "../../Components/UI/logo/logo";
+import Logo from "../../Components/UI/logo/logo";
+import "./Header.css";
+
 
 const Header = () => {
   return (
-    <div>
-      {/*<Logo />*/}
-      <Search />
-    </div>
+    <>
+      <div className="site-header">
+          <Logo />
+          <Search />
+        </div>
+    </>
   );
 };
 

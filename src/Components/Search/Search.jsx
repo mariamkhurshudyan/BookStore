@@ -1,5 +1,6 @@
 import Input from "../UI/Input/Input";
 import React, { useState } from "react";
+import './Search.css'
 
 const Search = () => {
   const [name, setName] = useState("");
