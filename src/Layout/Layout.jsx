@@ -1,12 +1,12 @@
 import React from "react";
 import { SideBar, Footer, Header } from "./index";
-import "./Layout.css";
+import styles from "./Layout.module.css";
 
 const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <div className="container">
+      <div className={styles.container}>
         <SideBar />
         <div>{children}</div>
       </div>

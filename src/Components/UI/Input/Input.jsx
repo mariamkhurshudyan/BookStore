@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./Input.css";
+import styles from "./Input.module.css";
 
 const Input = ({ name, onChange, inputType = "text", placeHolder }) => {
   return (
