@@ -1,7 +1,8 @@
-const Button = () => {
+import styles from "./Button.module.css";
+const Button = ({ name }) => {
   return (
     <div>
-      <button>Click Me</button>
+      <button className={styles.button}>{name}</button>
     </div>
   );
 };
