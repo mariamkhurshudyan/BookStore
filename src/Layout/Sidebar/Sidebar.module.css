@@ -1,13 +1,26 @@
 .sidebar{
     width: 20%;
-    font-size: 1rem;
+    font-size: 0.875rem;
     border-right: 1px solid #dae1e7;
+}
+
+.category{
+    padding: 5px;
+    color: #2F365F;
+}
+span{
+    margin-right: 4px;
+    padding-top: 2px;
+    color: #2F365F
 }
 
 .subCategory{
     border-left: 1px solid #dae1e7;
     padding: 5px 25px 5px 18px;
 }
-.category{
-    padding: 5px;
+.subCategory span{
+    color: #8795a1;
+}
+.subCategory span:hover{
+    color: #5661b3;
 }

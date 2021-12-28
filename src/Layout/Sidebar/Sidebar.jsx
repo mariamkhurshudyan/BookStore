@@ -9,15 +9,15 @@ const Sidebar = () => {
         {SidebarData.map((value, key) => {
           return (
             <li key={key} className={styles.category}>
-              <Link to={value.path} style={{ color: "#191e38" }}>
-                {value.icon}
-                <span>{value.title}</span>
+              <Link to={value.path}>
+                <span>{value.icon}</span>
+                <p>{value.title}</p>
               </Link>
               {value.sub &&
                 value.sub.map((category, index) => {
                   return (
                     <div key={index} className={styles.subCategory}>
-                      <Link to={category.path} style={{ color: "#191e38" }}>
+                      <Link to={category.path}>
                         <span>{category.title}</span>
                       </Link>
                     </div>

@@ -10,7 +10,7 @@ const Status = () => {
         <p>Book description</p>
       </div>
       <div className={styles.button}>
-        <Button name={"Add New Book"} />
+        <Button name={"Add New Book"} type={"button"} color={"primary"} />
       </div>
       <Analytics />
     </div>

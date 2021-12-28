@@ -1,7 +1,26 @@
-.button{
-    color: white;
+.primary{
     background-color: #5661B3;
-    padding: 8px 10px;
+}
+.secondary{
+    background-color: #269426;
+}
+.button{
+    font-size: 0.9rem;
+    cursor: pointer;
+    color: white;
+    padding: 8px 15px;
     border: none;
     border-radius: 20px;
 }
+.primary:hover{
+    background-color: #2f365f;
+
+}
+.secondary:hover{
+    background-color: #186018;
+}
+.button:hover{
+    transform: translateY(-1.5px);
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+}
+
