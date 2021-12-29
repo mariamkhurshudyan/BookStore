@@ -1,9 +1,9 @@
-import Status from "../Components/Status/Status";
+import StatusHeader from "../Components/Status/StatusHeader";
 
 const Home = () => {
   return (
     <div>
-      <Status />
+      <StatusHeader />
     </div>
   );
 };

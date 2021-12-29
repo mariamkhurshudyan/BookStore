@@ -1,12 +1,12 @@
 import Analytics from "../Analytics/Analytics";
-import styles from "./Status.module.css";
+import styles from "./StatusHeader.module.css";
 import Button from "../UI/Button/Button";
 
-const Status = () => {
+const StatusHeader = () => {
   return (
     <div className={styles.container}>
       <div className={styles.title}>
-        <h1>Book Title</h1>
+        <h2>Book Title</h2>
         <p>Book description</p>
       </div>
       <div className={styles.button}>
@@ -17,4 +17,4 @@ const Status = () => {
   );
 };
 
-export default Status;
+export default StatusHeader;

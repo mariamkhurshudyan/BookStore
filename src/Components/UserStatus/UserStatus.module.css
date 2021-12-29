@@ -1,0 +1,18 @@
+.holder{
+    display: flex;
+    width: 50%;
+    padding-top: 45px;
+    padding-left: 20px;
+    flex-wrap: wrap;
+    font-weight: 100;
+
+}
+.section{
+    width: 50%;
+    margin: 15px 0;
+}
+@media (max-width: 900px) {
+    .holder{
+        width: 100%;
+    }
+}
