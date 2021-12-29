@@ -6,25 +6,3 @@
     margin: 10px;
     padding: 8px;
 }
-.holder{
-    width: 50%;
-}
-.table{
-    line-height: 30px;
-    width: 100%;
-
-}
-.head{
-    color: #6574cd;
-
-}
-.row{
-    border-bottom: 1px solid #dae1e7;
-}
-
-.center{
-    text-align: center;
-}
-.right{
-    text-align: right;
-}
