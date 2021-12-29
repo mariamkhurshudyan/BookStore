@@ -1,4 +1,4 @@
-import StatusHeader from "../Components/Status/StatusHeader";
+import StatusHeader from "../Components/StatusHeader/StatusHeader";
 
 const Home = () => {
   return (
