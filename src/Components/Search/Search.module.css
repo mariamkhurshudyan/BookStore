@@ -1,0 +1,10 @@
+.SearchContainer{
+    width: 79%;
+    text-align: center;
+}
+.SearchIcon {
+    color: #fff;
+    position: fixed;
+    top: 3.8%;
+    left: 20.5%;
+}

@@ -4,12 +4,15 @@ import styles from "./Input.module.css";
 
 const Input = ({ name, onChange, inputType, placeHolder }) => {
   return (
-    <input
-      name={name}
-      type={inputType}
-      onChange={(e) => onChange(e)}
-      placeholder={placeHolder}
-    />
+    <div>
+      <input
+        className={styles.InputContainer}
+        name={name}
+        type={inputType}
+        onChange={(e) => onChange(e)}
+        placeholder={placeHolder}
+      />
+    </div>
   );
 };
 
