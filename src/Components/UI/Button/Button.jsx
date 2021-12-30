@@ -10,7 +10,7 @@ const Button = ({ name, type, color }) => {
   );
 };
 
-Button.prototype = {
+Button.propTypes = {
   name: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
 };
