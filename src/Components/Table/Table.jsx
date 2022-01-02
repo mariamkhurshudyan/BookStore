@@ -1,10 +1,14 @@
 import styles from "./Table.module.css";
 import { tableData, tableHeader } from "./TableData";
+import Title from "../UI/Title/Title";
 
 const Table = () => {
   return (
     <div className={styles.holder}>
-      <h4>Your favourite authors in this category</h4>
+      <Title
+        headingText="Your favourite authors in this category"
+        headingLevel="h4"
+      />
       <table className={styles.table}>
         <thead className={styles.head}>
           <tr className={styles.row}>
