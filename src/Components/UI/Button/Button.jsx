@@ -2,11 +2,9 @@ import styles from "./Button.module.css";
 import PropTypes from "prop-types";
 const Button = ({ name, type, color }) => {
   return (
-    <div>
       <button type={type} className={`${styles[color]} ${styles.button}`}>
         {name}
       </button>
-    </div>
   );
 };
 

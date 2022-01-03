@@ -1,18 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Title = ({ headingText, headingLevel }) => {
+const Title = ({ headingText, headingLevel, className }) => {
   const Heading = headingLevel;
   return (
-    <div>
-      <Heading>{headingText}</Heading>
-    </div>
+      <Heading className={className} >{headingText}</Heading>
   );
 };
 
 Title.propTypes = {
   headingText: PropTypes.string.isRequired,
   headingLevel: PropTypes.string,
+  className: PropTypes.string
 };
 Title.defaulProps = {
   headingLevel: "h1",

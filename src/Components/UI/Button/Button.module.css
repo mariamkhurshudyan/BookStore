@@ -11,6 +11,7 @@
     padding: 8px 15px;
     border: none;
     border-radius: 20px;
+    transition: all 0.3s ease-in-out;
 }
 .primary:hover{
     background-color: #2f365f;
