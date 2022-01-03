@@ -1,20 +1,24 @@
 .container{
-    text-align: center;
     display: flex;
     flex-direction: column;
-    margin: 15px 10px;
-    width: 20%;
-    padding: 0 15px;
+    width: 30%;
+    margin-bottom: 20px;
 }
 
 .container > img{
-    width: 200px;
+    width: 100%;
 }
+
+.container > p {
+    font-size: 14px;
+}
+
 .container > label{
     border: 0 solid transparent;
+    width: fit-content;
     border-radius: 25px;
+    font-size: 13px;
     background-color: #FDAC9A;
-    margin: 0 auto;
     padding: 3px 18px;
     color: white;
 }
