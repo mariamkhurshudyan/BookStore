@@ -33,5 +33,15 @@
 .medium {
     width: 50%;
 }
+.small{
+    width: 40%;
+}
+.white{
+    background-color: #f8fafc;
+    color: #2f365f;
+}
+.white:hover{
+    background-color: #fff;
+}
 
 

@@ -11,6 +11,8 @@ const Button = ({ name, type, color, size }) => {
 Button.propTypes = {
   name: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
+  size: PropTypes.string,
 };
 Button.defaultProps = {
   type: "button",
