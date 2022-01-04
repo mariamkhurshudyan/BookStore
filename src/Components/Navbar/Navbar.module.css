@@ -21,4 +21,9 @@
     transition: .2s all ease-in-out;
 }
 
+.active{
+    color: #4e5dab;
+    border-bottom: 2px solid #6574cd;
+}
+
 
