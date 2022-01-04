@@ -3,11 +3,19 @@
     flex-direction: column;
     width: 30%;
     margin-bottom: 20px;
+
 }
 
 .container > img{
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 5%);
+    transition: all 0.3s ease-in-out;
     width: 100%;
 }
+.container > img:hover{
+    transform: translateY(-1.5px);
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 12%);
+}
+
 
 .container > p {
     font-size: 14px;
