@@ -8,3 +8,8 @@
     width: 65%;
     padding: 40px 20px 0;
 }
+@media only screen and (max-width: 990px) {
+    .home{
+        width: 100%;
+    }
+}

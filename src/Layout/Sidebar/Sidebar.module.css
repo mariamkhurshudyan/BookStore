@@ -24,3 +24,9 @@ span{
 .subCategory span:hover{
     color: #5661b3;
 }
+
+@media only screen and (max-width: 990px) {
+    .sidebar{
+        display: none;
+    }
+}

@@ -6,11 +6,11 @@ const Navbar = () => {
         <div className={styles.container}>
             <p>Books</p>
             <div>
-            <NavLink to=''>
-                <span className={styles.link}>Library</span>
+            <NavLink  className={({ isActive }) => isActive ? styles.active : styles.link}  to='/'>
+               Library
             </NavLink>
-            <NavLink to='picks'>
-                <span className={styles.link}>Picks For You</span>
+            <NavLink className={({ isActive }) => isActive ? styles.active : styles.link} to='picks'>
+                Picks For You
             </NavLink>
             </div>
         </div>
