@@ -1,7 +1,7 @@
 import StatusHeader from "../Components/StatusHeader/StatusHeader";
 import Analytics from "../Components/Analytics/Analytics";
-import Books from "../Components/Books/Books";
 import Navbar from "../Components/Navbar/Navbar";
+import { Outlet } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -9,7 +9,7 @@ const Home = () => {
       <StatusHeader />
         <Analytics />
         <Navbar/>
-        <Books/>
+        <Outlet/>
     </>
   );
 };

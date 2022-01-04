@@ -7,6 +7,7 @@ import Home from "./routes/Home";
 import Book from "./routes/Book";
 import Layout from "./Layout/Layout";
 import NotFound from "./routes/NotFound";
+import Books from "./Components/Books/Books";
 
 const App = () => {
   return (
@@ -14,8 +15,10 @@ const App = () => {
       <Router>
         <Layout>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="book/:id" element={<Book />} />
+            <Route path="/" element={<Home/>} >
+              <Route path="" element={<Books/>} />
+              <Route path="picks" element={<Book />} />
+            </Route>
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
