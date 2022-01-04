@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 2px solid #dae1e7;
+    margin-top: 24px;
+    padding-bottom: 5px;
+}
+.container > p{
+    margin: 0;
+    color: #8795a1
+}
+.link{
+    line-height: 1.15;
+    font-size: 15px;
+    color: #191e38;
+    padding: 0 8px 5px;
+}
+.link:hover{
+    border-bottom: 2px solid #6574cd;
+    transition: .2s all ease-in-out;
+}
+
+
