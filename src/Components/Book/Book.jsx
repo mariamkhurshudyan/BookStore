@@ -5,7 +5,7 @@ const Book = ({source, title, label}) => {
         <div className={styles.container}>
             <img src={source} alt='Book Cover'/>
             <p>{title}</p>
-            <label>{label}</label>
+            <label className={styles[label]}>{label}</label>
         </div>
     );
 };

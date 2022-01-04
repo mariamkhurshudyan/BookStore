@@ -13,12 +13,23 @@
     font-size: 14px;
 }
 
-.container > label{
+label{
     border: 0 solid transparent;
     width: fit-content;
     border-radius: 25px;
     font-size: 13px;
-    background-color: #FDAC9A;
     padding: 3px 18px;
     color: white;
+}
+.finished{
+    background-color: #6574CD;
+}
+.loaned{
+    background-color: #C4CDD5;
+}
+.started{
+    background-color: #FFC48B;
+}
+.reading{
+    background-color: #FDAC9A;
 }
