@@ -25,3 +25,12 @@
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
 }
 
+.large {
+    width: 100%;
+}
+
+.medium {
+    width: 50%;
+}
+
+

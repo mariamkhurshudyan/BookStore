@@ -1,8 +1,8 @@
 import styles from "./Button.module.css";
 import PropTypes from "prop-types";
-const Button = ({ name, type, color }) => {
+const Button = ({ name, type, color, size }) => {
   return (
-      <button type={type} className={`${styles[color]} ${styles.button}`}>
+      <button type={type} className={`${styles[color]} ${styles.button} ${styles[size]}`}>
         {name}
       </button>
   );
