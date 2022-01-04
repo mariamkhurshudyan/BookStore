@@ -1,6 +1,7 @@
 import React from "react";
 import { SideBar, Footer, Header } from "./index";
 import styles from "./Layout.module.css";
+import Profile from "../Components/Profile/Profile";
 
 const Layout = ({ children }) => {
   return (
@@ -9,6 +10,7 @@ const Layout = ({ children }) => {
       <div className={styles.container}>
         <SideBar />
         <div className={styles.home}>{children}</div>
+          <Profile/>
       </div>
       <Footer />
     </>
