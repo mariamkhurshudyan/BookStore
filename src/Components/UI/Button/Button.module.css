@@ -6,9 +6,10 @@
 }
 .button{
     font-size: 0.9rem;
+    width: fit-content;
     cursor: pointer;
     color: white;
-    padding: 8px 15px;
+    padding: 8px 10px;
     border: none;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 12%), 0 2px 4px 0 rgb(0 0 0 / 8%);

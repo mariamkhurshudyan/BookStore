@@ -6,3 +6,32 @@
     background-color: #2F365F;
     width: 100%;
 }
+
+.logo{
+    display: inline;
+    cursor: pointer;
+}
+.menu{
+    display: none;
+    cursor: pointer;
+    color: white;
+    margin-right: 4px;
+}
+.menu:hover{
+    transform: translateY(-0.8px);
+}
+.link{
+    display: block;
+}
+
+@media only screen and (max-width: 990px) {
+    .menu{
+        display: block;
+    }
+    .logo{
+        display: none;
+    }
+    .link{
+        display: none;
+    }
+}

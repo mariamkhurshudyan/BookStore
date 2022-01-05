@@ -10,7 +10,7 @@ const Picks = () => {
                     <div className={styles.info}>
                             <p> {book.title}</p>
                             <p> {book.text}</p>
-                            <Button size='medium' color='white' type='button' name='Add to Wishlist'/>
+                            <Button color='white' type='button' name='Add to Wishlist'/>
                     </div>
                 </div>
             ))}

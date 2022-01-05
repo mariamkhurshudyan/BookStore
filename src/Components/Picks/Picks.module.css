@@ -43,3 +43,8 @@
 .offWhite{
     background-color: #ECE7E9;
 }
+@media only screen and (max-width: 580px) {
+    .cover{
+        width: 100%;
+    }
+}
