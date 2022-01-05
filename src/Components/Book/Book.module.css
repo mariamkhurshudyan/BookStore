@@ -41,3 +41,15 @@ label{
 .reading{
     background-color: #FDAC9A;
 }
+@media only screen and (max-width: 580px) {
+    .container{
+        width: 100%;
+        flex-direction: row;
+    }
+    .container > img{
+        width: 35%;
+    }
+    label{
+        display: none;
+    }
+}
