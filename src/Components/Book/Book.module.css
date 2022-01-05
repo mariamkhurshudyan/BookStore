@@ -41,15 +41,42 @@ label{
 .reading{
     background-color: #FDAC9A;
 }
+.info{
+    display: none;
+}
+
 @media only screen and (max-width: 580px) {
     .container{
         width: 100%;
         flex-direction: row;
+        align-items: center;
     }
     .container > img{
         width: 35%;
     }
     label{
+        display: none;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        width: 62%;
+        padding: 5px;
+        font-size: 14px;
+    }
+    .info > select{
+        border: 3px solid #dae1e7;
+        box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+        font-size: 16px;
+        border-radius: 5px;
+        padding: 5px;
+        outline-offset: -78px;
+    }
+    .info > select:focus-visible {
+        box-shadow: 0 0 0 3px rgb(52 144 220 / 30%);
+
+    }
+    .container > p,label{
         display: none;
     }
 }
