@@ -7,9 +7,9 @@ const Home = () => {
   return (
     <>
       <StatusHeader />
-        <Analytics />
+        <Analytics className1='primary'/>
         <Navbar/>
-        <Outlet/>
+        <Outlet prop='something'/>
     </>
   );
 };

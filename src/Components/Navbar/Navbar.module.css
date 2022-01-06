@@ -1,7 +1,7 @@
 .container{
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     border-bottom: 2px solid #dae1e7;
     margin-top: 24px;
     padding-bottom: 5px;
@@ -26,5 +26,15 @@
     padding: 0 8px 5px;
     border-bottom: 2px solid #6574cd;
 }
+.hidden{
+    display: none;
+}
 
-
+@media only screen and (max-width: 768px){
+    .container > p{
+        display: none;
+    }
+    .hidden{
+        display: inline;
+    }
+}

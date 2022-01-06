@@ -66,15 +66,17 @@ label{
     }
     .info > select{
         border: 3px solid #dae1e7;
-        box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+        box-shadow: 0 2px 4px 0 rgb(0 0 0 / 9%);
         font-size: 16px;
         border-radius: 5px;
         padding: 5px;
         outline-offset: -78px;
     }
     .info > select:focus-visible {
-        box-shadow: 0 0 0 3px rgb(52 144 220 / 30%);
-
+        box-shadow: 0 0 0 2px rgb(52 144 220 / 30%);
+    }
+    .info > select:hover {
+        border-color: #b8c2cc;
     }
     .container > p,label{
         display: none;
