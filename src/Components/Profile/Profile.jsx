@@ -17,7 +17,7 @@ const Profile = () => {
                 <Title headingText='You have read 4 of 30 books in 2018' headingLevel='h3'/>
                     <div className={styles.covers}>
                         {PicksData.map(cover=>(
-                            <img src={cover.imgURL} alt='read'/>
+                            <img key={cover.id} src={cover.imgURL} alt='read'/>
                         ))}
                     </div>
             </div>

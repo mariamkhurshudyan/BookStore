@@ -11,16 +11,16 @@ const Table = () => {
       <table className={styles.table}>
         <thead className={styles.head}>
           <tr className={styles.row}>
-            {tableHeader.map((value, index) => (
-               <td key={index} className={styles[value.position]}>{value.title}</td>
+            {tableHeader.map(value => (
+               <td key={value.id} className={styles[value.position]}>{value.title}</td>
                 ))}
           </tr>
         </thead>
         <tbody>
-          {tableData.map((value, index) => {
+          {tableData.map(value => {
             return (
-              <tr className={styles.row}>
-                <td key={index}>{value.author}</td>
+              <tr key={value.id} className={styles.row}>
+                <td >{value.author}</td>
                 <td className={styles.center}>{value.timesRead}</td>
                 <td className={styles.right}>{value.nationality}</td>
               </tr>
