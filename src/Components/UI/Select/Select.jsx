@@ -1,7 +1,7 @@
 const Select = () => {
     return (
-            <select defaultValue="Start">
-                <option>Start</option>
+            <select defaultValue="Started">
+                <option>Started</option>
                 <option>Loaned</option>
                 <option>Finished</option>
             </select>

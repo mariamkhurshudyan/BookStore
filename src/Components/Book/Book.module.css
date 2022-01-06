@@ -1,10 +1,11 @@
 .container{
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 33%;
     margin-bottom: 20px;
     padding: 5px;
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 8%);
+    border-radius: 5px;
 }
 .status{
     display:flex;
@@ -15,6 +16,7 @@
 }
 .container > img{
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 5%);
+    border-radius: 5px;
     width: 100%;
 }
 .container:hover{
@@ -35,6 +37,7 @@ label{
     font-size: 13px;
     padding: 3px 18px;
     color: white;
+    margin: 2px 0;
 }
 .finished{
     background-color: #6574CD;
@@ -66,7 +69,11 @@ label{
 .info > Select:hover {
     border-color: #b8c2cc;
 }
-
+@media only screen and (max-width: 640px){
+    .status{
+        flex-direction: column;
+    }
+}
 @media only screen and (max-width: 580px) {
     .container{
         width: 100%;
@@ -82,7 +89,7 @@ label{
     .info{
         display: flex;
         flex-direction: column;
-        width: 62%;
+        width: 100%;
         padding: 5px;
         font-size: 14px;
     }
