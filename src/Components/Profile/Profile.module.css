@@ -2,7 +2,7 @@
     display: flex;
     width: 20%;
     flex-direction: column;
-    background-color: #eaf1f7
+    background-color: #eaf1f7;
 }
 .header{
     display: flex;

@@ -17,9 +17,9 @@ const Table = () => {
           </tr>
         </thead>
         <tbody>
-          {tableData.map(value => {
+          {tableData.map((value,index) => {
             return (
-              <tr key={value.id} className={styles.row}>
+              <tr key={value.id} className={ tableData.length -1 === index ? '' : styles.row}>
                 <td >{value.author}</td>
                 <td className={styles.center}>{value.timesRead}</td>
                 <td className={styles.right}>{value.nationality}</td>

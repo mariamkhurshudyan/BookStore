@@ -5,14 +5,18 @@
     padding-left: 30px;
     flex-wrap: wrap;
     font-weight: 100;
+    background-color: white;
+    border-radius: 4px;
 
 }
 .section{
     width: 50%;
     margin: 15px 0;
 }
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .holder{
         width: 100%;
+        margin-top: 13px;
+        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 12%), 0 2px 4px 0 rgb(0 0 0 / 8%);
     }
 }

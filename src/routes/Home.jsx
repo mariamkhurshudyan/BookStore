@@ -9,7 +9,7 @@ const Home = () => {
       <StatusHeader />
         <Analytics className1='primary'/>
         <Navbar/>
-        <Outlet prop='something'/>
+        <Outlet/>
     </>
   );
 };

@@ -3,17 +3,24 @@
     flex-direction: column;
     width: 30%;
     margin-bottom: 20px;
-
+    padding: 5px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 8%);
 }
-
-.container > img{
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 5%);
-    transition: all 0.3s ease-in-out;
+.status{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
 }
-.container > img:hover{
+.container > img{
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 5%);
+    width: 100%;
+}
+.container:hover{
     transform: translateY(-1.5px);
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 12%);
+    transition: all 0.3s ease-in-out;
 }
 
 
@@ -41,8 +48,23 @@ label{
 .reading{
     background-color: #FDAC9A;
 }
-.info{
+.info > p{
     display: none;
+}
+
+.info > Select{
+    border: 3px solid #dae1e7;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 9%);
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 5px;
+    outline-offset: -78px;
+}
+.info > Select:focus-visible {
+    box-shadow: 0 0 0 2px rgb(52 144 220 / 30%);
+}
+.info > Select:hover {
+    border-color: #b8c2cc;
 }
 
 @media only screen and (max-width: 580px) {
@@ -64,7 +86,10 @@ label{
         padding: 5px;
         font-size: 14px;
     }
-    .info > select{
+    .info > p{
+        display: flex;
+    }
+    .info > Select{
         border: 3px solid #dae1e7;
         box-shadow: 0 2px 4px 0 rgb(0 0 0 / 9%);
         font-size: 16px;
@@ -72,10 +97,10 @@ label{
         padding: 5px;
         outline-offset: -78px;
     }
-    .info > select:focus-visible {
+    .info > Select:focus-visible {
         box-shadow: 0 0 0 2px rgb(52 144 220 / 30%);
     }
-    .info > select:hover {
+    .info > Select:hover {
         border-color: #b8c2cc;
     }
     .container > p,label{

@@ -1,10 +1,9 @@
 import styles from "./Picks.module.css"
 import {PicksData} from "./PicksData";
 import Button from "../UI/Button/Button";
-import Analytics from "../Analytics/Analytics";
+
 const Picks = () => {
     return (
-        <>
         <div className={styles.container}>
             {PicksData.map( book =>(
                 <div className={`${styles.cover} ${styles[book.color]}`}>
@@ -17,8 +16,6 @@ const Picks = () => {
                 </div>
             ))}
         </div>
-        <Analytics className1='primary'/>
-        </>
     );
 };
 
