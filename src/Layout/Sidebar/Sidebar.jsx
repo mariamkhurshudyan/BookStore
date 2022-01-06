@@ -2,16 +2,18 @@ import { SidebarData } from "./SidebarData";
 import { Link } from "react-router-dom";
 import styles from "./Sidebar.module.css";
 
-const Sidebar = () => {
+const Sidebar = ({className}) => {
   return (
-    <div className={styles.sidebar}>
+    <div className={styles[className] ||  styles.sidebar}>
       <ul>
         {SidebarData.map((value, key) => {
           return (
             <li key={key} className={styles.category}>
               <Link to={value.path}>
+                  <div className={styles.section}>
                 <span>{value.icon}</span>
-                <p>{value.title}</p>
+                <span>{value.title}</span>
+                  </div>
               </Link>
               {value.sub &&
                 value.sub.map((category, index) => {

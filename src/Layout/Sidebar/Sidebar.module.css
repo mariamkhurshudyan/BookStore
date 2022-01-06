@@ -17,6 +17,8 @@ span{
 .subCategory{
     border-left: 1px solid #dae1e7;
     padding: 5px 25px 5px 18px;
+    margin: 1px 0;
+    font-size: 14px;
 }
 .subCategory span{
     color: #8795a1;
@@ -24,9 +26,35 @@ span{
 .subCategory span:hover{
     color: #5661b3;
 }
-
+.header{
+    position: absolute;
+    background-color: #2F365F;
+    width: 100%;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2px;
+}
+.hide{
+    display: none;
+}
+.section{
+    display: flex;
+    align-items: center;
+}
 @media only screen and (max-width: 990px) {
     .sidebar{
+        display: none;
+    }
+    span{
+        margin-right: 4px;
+        padding-top: 2px;
+        color: #fff
+    }
+}
+@media only screen and (min-width: 990px) {
+    .header{
         display: none;
     }
 }

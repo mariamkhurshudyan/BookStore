@@ -5,7 +5,6 @@ import { AiOutlineSearch } from "react-icons/ai";
 
 const Search = () => {
   const [term, setTerm] = useState("");
-  console.log(term);
   return (
     <div className={styles.SearchContainer}>
       <div className={styles.SearchIcon}>

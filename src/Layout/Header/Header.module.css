@@ -23,7 +23,10 @@
 .link{
     display: block;
 }
-
+.relative{
+    position: relative;
+    width: 100%;
+}
 @media only screen and (max-width: 990px) {
     .menu{
         display: block;
