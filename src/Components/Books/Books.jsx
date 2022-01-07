@@ -6,7 +6,7 @@ const Books = () => {
     return (
         <div className={styles.container}>
             {BookData.map(book=>(
-                <Book uniqId={book.id} source={book.imageUrl} title={book.title} label={book.label} snippet={book.snippet}/>
+                <Book key={book.id} source={book.imageUrl} title={book.title} label={book.label} snippet={book.snippet}/>
             ))
             }
         </div>

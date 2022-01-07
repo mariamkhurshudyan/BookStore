@@ -6,7 +6,7 @@ const Picks = () => {
     return (
         <div className={styles.container}>
             {PicksData.map( book =>(
-                <div className={`${styles.cover} ${styles[book.color]}`}>
+                <div key={book.id} className={`${styles.cover} ${styles[book.color]}`}>
                     <img src={book.imgURL} alt='book cover'/>
                     <div className={styles.info}>
                             <p> {book.title}</p>

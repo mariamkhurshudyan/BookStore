@@ -1,9 +1,9 @@
 import styles from './Book.module.css';
 import Select from "../UI/Select/Select";
 
-const Book = ({source, title, label , snippet ,uniqId}) => {
+const Book = ({source, title, label , snippet}) => {
     return (
-        <div key={uniqId} className={styles.container}>
+        <div className={styles.container}>
             <img src={source} alt='Book Cover'/>
             <p>{title}</p>
             <div className={styles.status}>
