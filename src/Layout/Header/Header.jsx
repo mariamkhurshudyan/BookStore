@@ -4,15 +4,17 @@ import styles from "./Header.module.css";
 import Sidebar from "../Sidebar/Sidebar";
 import {useState} from "react";
 import {VscChromeClose, VscMenu} from "react-icons/vsc";
+import {useNavigate} from "react-router-dom";
 
 const Header = () => {
+    const navigate = useNavigate()
     const [open, setOpen] = useState( false)
     const toggle = ()=>{
         setOpen(!open)
     }
   return (
     <>
-      <div className={styles.header}>
+      <div className={styles.header} onClick={() => navigate('')}>
           <span className={styles.logo}>
         <Logo />
           </span>

@@ -9,7 +9,7 @@ const Title = ({ headingText, headingLevel, className }) => {
 };
 
 Title.propTypes = {
-  headingText: PropTypes.string.isRequired,
+  headingText: PropTypes.string,
   headingLevel: PropTypes.string,
   className: PropTypes.string
 };

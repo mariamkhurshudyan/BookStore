@@ -3,7 +3,7 @@ import { ImPriceTag } from "react-icons/im";
 import { TiThLarge } from "react-icons/ti";
 
 export const SidebarData = [
-  { title: "Home", icon: <AiFillHome />, path: "/home", sub: false },
+  { title: "Home", icon: <AiFillHome />, path: "", sub: false },
   {
     title: "Category",
     icon: <ImPriceTag />,
