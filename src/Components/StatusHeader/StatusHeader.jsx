@@ -21,8 +21,7 @@ const StatusHeader = () => {
     <div className={styles.container}>
       <div className={styles.title}>
         <Title headingLevel="h2" headingText={name} />
-        <p>{population}</p>
-          <span>  Creature Live there</span>
+        <p>{population} Creature Live there</p>
       </div>
         <Button name={"Another Planet"} type={"button"} color={"primary"} onClick={displayPlanet} />
     </div>
