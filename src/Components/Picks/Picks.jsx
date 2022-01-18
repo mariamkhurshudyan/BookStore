@@ -7,7 +7,7 @@ const Picks = () => {
         <div className={styles.container}>
             {PicksData.map( book =>(
                 <div key={book.id} className={`${styles.cover} ${styles[book.color]}`}>
-                    <img src={book.imgURL} alt='book cover'/>
+                    <img src='https://c4.wallpaperflare.com/wallpaper/945/452/836/space-earth-moon-vertical-wallpaper-preview.jpg' alt='book cover'/>
                     <div className={styles.info}>
                             <p> {book.title}</p>
                             <p> {book.text}</p>

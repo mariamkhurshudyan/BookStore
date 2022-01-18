@@ -1,5 +1,5 @@
 import Search from "../../Components/Search/Search";
-import Logo from "../../Components/UI/logo/Logo";
+import Logo from "../../Components/UI/Logo/Logo";
 import styles from "./Header.module.css";
 import Sidebar from "../Sidebar/Sidebar";
 import {useState} from "react";

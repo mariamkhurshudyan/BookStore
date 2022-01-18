@@ -1,5 +1,6 @@
 import axios  from 'axios';
 
+
 const Types = {
     FETCH_PLANETS: 'FETCH_PLANETS',
     FETCH_SUCCESS: 'FETCH_SUCCESS',
@@ -7,13 +8,13 @@ const Types = {
 }
 
 const initFetch = ()=>{
-    return {type: Types.FETCH_PLANETS}
+    return {type: Types.FETCH_PLANETS,}
 }
 
 const fetchSuccess = data =>{
     return {
         type: Types.FETCH_SUCCESS,
-        data
+         data
     }
 }
 
@@ -41,9 +42,26 @@ const planetActions = (action)=>{
     }
 }
 
-const planetReducer = (state=[], action)=>{
+const planetReducer = (state={ planet: [],  error: '', loading: true,}, action)=>{
     const planetState = planetActions(action)[action.type]
     return planetState ? planetState : state;
 }
 
 
+const fetchPlanets = async (dispatch)=>{
+    try {
+        const response = await axios.get('https://swapi.dev/api/planets')
+        dispatch(fetchSuccess(response.data.results))
+    } catch (error){
+        dispatch(fetchFailure(error.message))
+    }
+}
+
+export const getPlanets = ()=>{
+    return (dispatch)=>{
+        dispatch(initFetch());
+        fetchPlanets(dispatch).then()
+    }
+}
+
+export default planetReducer;

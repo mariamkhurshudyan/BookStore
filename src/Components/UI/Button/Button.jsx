@@ -3,10 +3,10 @@ import PropTypes from "prop-types";
 import classNames from "classnames/bind";
 
 const style = classNames.bind(styles)
-const Button = ({ name, type, color, size }) => {
+const Button = ({ name, type, color, size, onClick}) => {
   const className = style('button',color,size)
   return (
-      <button type={type} className={className}>
+      <button type={type} className={className} onClick={onClick} >
         {name}
       </button>
   );
