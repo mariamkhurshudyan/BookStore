@@ -7,6 +7,7 @@
 .home{
     width: 65%;
     padding: 40px 20px 0;
+    position: relative;
 }
 @media only screen and (max-width: 990px) {
     .home{

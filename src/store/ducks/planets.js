@@ -51,7 +51,12 @@ const planetReducer = (state={ planet: [],  error: '', loading: true,}, action)=
 const fetchPlanets = async (dispatch)=>{
     try {
         const response = await axios.get('https://swapi.dev/api/planets')
-        dispatch(fetchSuccess(response.data.results))
+        const data = response.data.results.map((planet,index)=>{
+            return{
+                ...planet,id:index
+            }
+        })
+        dispatch(fetchSuccess(data))
     } catch (error){
         dispatch(fetchFailure(error.message))
     }

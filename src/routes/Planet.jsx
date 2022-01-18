@@ -9,7 +9,7 @@ const Planet = () => {
   const { id } = useParams();
   const [planetData, setPlanetData] = useState({})
   useEffect(() => {
-   const planets =  planet.find(({name}) => name === id)
+   const planets =  planet.find(planet => planet.id === +id)
     if(Object.keys(planet).length) {
         setPlanetData((prev) => ({...prev, ...planets}))
     }

@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
             <SideBar />
             <div className={styles.home}>
                 { loading ? <Loader/> : children}</div>
-          <Profile/>
+             <Profile/>
       </div>
       <Footer />
     </>

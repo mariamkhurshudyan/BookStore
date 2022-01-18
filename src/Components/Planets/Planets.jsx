@@ -8,7 +8,7 @@ const Planets = () => {
         <>
         <div className={styles.container}>
             {planet.map((planet, index)=>(
-                <Planet key={index} title={planet.name} terrain={planet.terrain} name={planet.name}/>
+                <Planet key={index} title={planet.name} terrain={planet.terrain} id={planet.id}/>
             ))
             }
         </div>
